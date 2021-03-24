@@ -5,7 +5,7 @@
 Clone the `csc2516` branch (make sure to use `csc2516` branch)
 
 ```shell
-git clone --branch csc2516 https://github.com/constructor-s/csc2516_project_ecg_ptbxl_benchmarking.git`
+git clone --branch csc2516 https://github.com/constructor-s/csc2516_project_ecg_ptbxl_benchmarking.git
 ```
 
 ## Minimal dependencies
