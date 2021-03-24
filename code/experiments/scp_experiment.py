@@ -104,8 +104,11 @@ class SCP_Experiment():
                 # YOUR MODEL GOES HERE!
                 from models.your_model import YourModel
                 model = YourModel(modelname, n_classes, self.sampling_frequency, mpath, self.input_shape, **modelparams)
+            elif "modelclass" in model_description:
+                # Instantiate from the provided class reference
+                model = model_description["modelclass"](modelname, n_classes, self.sampling_frequency, mpath, self.input_shape, **modelparams)
             else:
-                assert(True)
+                assert False, f"Unable to instantiate model given model description: {model_description}"
                 break
 
             # fit model
