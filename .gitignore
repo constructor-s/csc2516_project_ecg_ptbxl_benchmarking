@@ -14,5 +14,6 @@ __pycache__
 
 .ipynb_checkpoints
 
-/data
-/tmp_data
+data
+tmp_data
+output
